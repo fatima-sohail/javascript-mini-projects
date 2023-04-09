@@ -50,10 +50,10 @@ const getUserChoice = (userInput) => {
        } else {
          return 'You won';
        }
-       if (userChoice = 'paper'){
+       if (userChoice === 'paper'){
          if (computerChoice === 'scissors') {
-           return 'The computer won'
-         }else {
+           return 'The computer won';
+         } else {
            return 'You won!'
          }
          if (userChoice === 'scissors') {
