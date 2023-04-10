@@ -35,12 +35,12 @@ const getUserChoice = (userInput) => {
    // console.log(getComputerChoice());
    
    let determineWinner = (userChoice, computerChoice) => {
-     /*
-     cheat code to win: 
-     if (userChoice === 'bomb'){
-      return 'You won!'
-      } 
-      */ 
+     
+     //cheat code to win: 
+     //if (userChoice === 'bomb'){
+      //return 'You won!'
+      //} 
+      
      if (userChoice === computerChoice){
        return 'This game was a tie';
      }
@@ -50,12 +50,16 @@ const getUserChoice = (userInput) => {
        } else {
          return 'You won';
        }
+    }
+
        if (userChoice === 'paper'){
          if (computerChoice === 'scissors') {
            return 'The computer won';
          } else {
            return 'You won!'
          }
+        }
+
          if (userChoice === 'scissors') {
            if (computerChoice === 'paper') {
              return 'You won!'
@@ -63,6 +67,7 @@ const getUserChoice = (userInput) => {
              return 'The computer won'
            }
          }
+
          if (userChoice === 'scissors'){
            if (computerChoice === 'rock') {
               return 'The computer won'
@@ -71,12 +76,12 @@ const getUserChoice = (userInput) => {
          }
          }
        }
-     }
-   }
+     
+   
    // console.log(determineWinner('scissors', 'paper'))
    var playGame = () => {
      var userChoice = getUserChoice('rock');
-     // var userChoice = getUserChoice('bomb');
+    // var userChoice = getUserChoice('bomb');
    
      var computerChoice = getComputerChoice();
    
