@@ -68,4 +68,32 @@ console.log(checkIfEvenNumsAreMoreThanOddNumArray(test3))
 test4 = [2,3,4,5,6,7,8,9,0,0,0,0,1,2,3,4,5,6,7,8,9,0]
 console.log(checkIfEvenNumsAreMoreThanOddNumArray(test3))
 
-//Task 4: 
+console.log("-----------------------------")
+
+//Task 4: write a function that takes in 2 list of unique nums and 
+// returns a list of common nums
+
+// arr1:[34, 22, 8, 6, 3], arr2:[3, 22, 77, 9] => [3, 22]
+// arr1: [7, 9, 0, 1] arr2:[9, 0] => [9,0]
+
+//go through each item in both the arrays - loop
+//find out common nums among them
+//return the common num
+
+function findCommonNums (arr1, arr2){
+    let resultArr= []
+    for(let i =0; i<arr1.length; i++){ //for 34 in arr1, go through each item in arr2
+                                              //for 22 in arr1, go through each item in arr2
+                                              //so it becomes loop with in loop/nested loop
+        for (let j=0; j<arr2.length; j++){
+            if(arr1[i]==arr2[j]){
+                resultArr.push(arr1[i])
+            }
+        }
+    }
+    return resultArr
+}
+
+testarr1 = [34, 22, 8, 6, 3]
+testarr2 = [3, 22, 77, 9]
+console.log(findCommonNums(testarr1, testarr2))
