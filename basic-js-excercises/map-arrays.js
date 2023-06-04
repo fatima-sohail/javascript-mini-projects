@@ -26,6 +26,7 @@ function arrMultipliedBy2(arr){
 }
 
 testArr2 = [2,3,4];
+testArr3 = [5,8,0,7,3,1,5,5,0] 
 
 console.log(arrMultipliedBy2(testArr2));
 
