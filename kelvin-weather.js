@@ -1,4 +1,4 @@
-// 
+// converting temperature from kelvin to celsius and celsius to newton
 // var readline = require('readline');
 
 // var rl = readline.createInterface({
